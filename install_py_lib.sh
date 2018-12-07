@@ -1,0 +1,1 @@
+sudo pip3 install pexpect ptyprocess pyzmq scanf ConfigParser
