@@ -84,3 +84,10 @@ wget -qO- https://raw.github.com/ma6174/vim/master/setup.sh | sh -x
 pip list --outdated | awk '{print "pip install --upgrade "$1}' > python-upgrade.sh
 sh python-upgrade.sh
 
+// docker 安装
+sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
